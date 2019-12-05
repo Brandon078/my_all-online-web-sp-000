@@ -7,6 +7,7 @@ def my_all?(collection)
     return_values << yield(collection[i])
     i += 1
   end
+  binding.pry
   if return_values.include?(false)
     false
   else true
